@@ -1,21 +1,25 @@
 import UIKit
 import RxSwift
+import RxCocoa
 
 let disposeBag = DisposeBag()
 
-Observable.of("A", "B", "C")
+let relay = BehaviorRelay(value: ["Item 1"])
+
+var value = relay.value
+value.append("Item 2")
+value.append("Item 3")
+value.append("Item 4")
+
+relay.accept(value)
+
+//relay.accept(relay.value + ["Item 2"])
+
+relay.asObservable()
     .subscribe {
         print($0)
-    }.disposed(by: disposeBag)
+    }
 
-Observable<String>.create { observer in
-    
-    observer.onNext("A")
-    observer.onCompleted()
-    observer.onNext("?")
-    return Disposables.create()
-}.subscribe(onNext: { print($0) },
-            onError: { print($0) },
-            onCompleted: { print("Completed") },
-            onDisposed: { print("Disposed") }
-).disposed(by: disposeBag)
+
+
+
