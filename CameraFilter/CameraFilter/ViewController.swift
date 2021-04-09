@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         }
         
         applyFilterButton.snp.makeConstraints { (make) in
-            make.top.equalTo(imageView.snp.bottom).offset(30)
+            make.top.equalTo(imageView.snp.bottom).offset(10)
             make.centerX.equalTo(self.view.center)
             make.width.equalTo(150)
             make.height.equalTo(36)
@@ -59,6 +59,10 @@ class ViewController: UIViewController {
 
     @objc func addTapped() {
         print("TAP")
+        
+        let vc = NewViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+//        self.present(vc, animated: true)
     }
     
     @objc func apply() {
