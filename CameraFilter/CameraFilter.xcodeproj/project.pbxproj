@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		06B59C572611EC5400CFCF03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B59C562611EC5400CFCF03 /* AppDelegate.swift */; };
 		06B59C592611EC5400CFCF03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B59C582611EC5400CFCF03 /* SceneDelegate.swift */; };
 		06B59C5B2611EC5400CFCF03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B59C5A2611EC5400CFCF03 /* ViewController.swift */; };
-		06B59C5E2611EC5400CFCF03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B59C5C2611EC5400CFCF03 /* Main.storyboard */; };
 		06B59C602611EC5500CFCF03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B59C5F2611EC5500CFCF03 /* Assets.xcassets */; };
 		06B59C632611EC5500CFCF03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B59C612611EC5500CFCF03 /* LaunchScreen.storyboard */; };
 		06B59C6C2611ED6D00CFCF03 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B59C6B2611ED6D00CFCF03 /* PhotoCollectionViewController.swift */; };
@@ -22,7 +21,6 @@
 		06B59C562611EC5400CFCF03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06B59C582611EC5400CFCF03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		06B59C5A2611EC5400CFCF03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		06B59C5D2611EC5400CFCF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06B59C5F2611EC5500CFCF03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06B59C622611EC5500CFCF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06B59C642611EC5500CFCF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 				06B59C562611EC5400CFCF03 /* AppDelegate.swift */,
 				06B59C582611EC5400CFCF03 /* SceneDelegate.swift */,
 				06B59C5A2611EC5400CFCF03 /* ViewController.swift */,
-				06B59C5C2611EC5400CFCF03 /* Main.storyboard */,
 				06B59C6B2611ED6D00CFCF03 /* PhotoCollectionViewController.swift */,
 				06B59C5F2611EC5500CFCF03 /* Assets.xcassets */,
 				06B59C612611EC5500CFCF03 /* LaunchScreen.storyboard */,
@@ -91,7 +88,6 @@
 				F5230A812876863F360F8169 /* Pods-CameraFilter.debug.xcconfig */,
 				AAA6CC16442FD536E39B0D26 /* Pods-CameraFilter.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -156,7 +152,6 @@
 			files = (
 				06B59C632611EC5500CFCF03 /* LaunchScreen.storyboard in Resources */,
 				06B59C602611EC5500CFCF03 /* Assets.xcassets in Resources */,
-				06B59C5E2611EC5400CFCF03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,14 +214,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		06B59C5C2611EC5400CFCF03 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06B59C5D2611EC5400CFCF03 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		06B59C612611EC5500CFCF03 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

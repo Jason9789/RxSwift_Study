@@ -17,15 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lo6-fx-6R3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lo6-fx-6R3">
                                 <rect key="frame" x="0.0" y="88" width="414" height="672"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMR-UZ-8Gc">
-                                <rect key="frame" x="157" y="795" width="100" height="30"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMR-UZ-8Gc">
+                                <rect key="frame" x="168" y="795" width="78" height="30"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="QiE-e4-ncl"/>
-                                </constraints>
                                 <state key="normal" title="Apply Filter">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -34,12 +31,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="lo6-fx-6R3" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.75" id="BNn-cs-XgF"/>
                             <constraint firstItem="lo6-fx-6R3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BZR-Rh-Uw8"/>
                             <constraint firstItem="lo6-fx-6R3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ETb-Nk-3wf"/>
                             <constraint firstItem="uMR-UZ-8Gc" firstAttribute="top" secondItem="lo6-fx-6R3" secondAttribute="bottom" constant="35" id="Eol-rB-1uN"/>
                             <constraint firstItem="lo6-fx-6R3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Mc8-nn-PqU"/>
                             <constraint firstItem="uMR-UZ-8Gc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OL3-YW-IX7"/>
+                            <constraint firstItem="uMR-UZ-8Gc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="168" id="vCr-zf-Vdt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Camera Filter" id="q1F-M4-q8T">
@@ -54,7 +51,7 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="88.392857142857139"/>
         </scene>
-        <!--Photo Collection Viewcontroller-->
+        <!--NAVI-->
         <scene sceneID="cgo-Um-hCg">
             <objects>
                 <collectionViewController storyboardIdentifier="PhotoCollectionViewcontroller" id="y3f-9K-Pdu" customClass="PhotoCollectionViewcontroller" customModule="CameraFilter" customModuleProvider="target" sceneMemberID="viewController">
@@ -83,7 +80,7 @@
                             <outlet property="delegate" destination="y3f-9K-Pdu" id="879-BL-FlN"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="rZs-Rs-Ken"/>
+                    <navigationItem key="navigationItem" title="NAVI" id="rZs-Rs-Ken"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sro-c8-9t0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
