@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -43,10 +43,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06E1FE3F2681C00B00FBEE3C = {
+		06A251862681C18F00F1A7F4 /* playground */ = {
 			isa = PBXGroup;
 			children = (
 				06E1FE5F2681C04100FBEE3C /* Observables.playground */,
+			);
+			path = playground;
+			sourceTree = "<group>";
+		};
+		06E1FE3F2681C00B00FBEE3C = {
+			isa = PBXGroup;
+			children = (
+				06A251862681C18F00F1A7F4 /* playground */,
 				06E1FE4A2681C00B00FBEE3C /* RxSwiftPlayGround */,
 				06E1FE492681C00B00FBEE3C /* Products */,
 				160A4F67E43ED54B60BEE562 /* Pods */,
@@ -82,7 +90,6 @@
 				61B2450EF4ACB0C285B27C5F /* Pods-RxSwiftPlayGround.debug.xcconfig */,
 				3A3EED4ADB2D52DF22CBF4FD /* Pods-RxSwiftPlayGround.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
