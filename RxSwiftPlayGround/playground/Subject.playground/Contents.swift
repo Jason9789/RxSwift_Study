@@ -80,3 +80,76 @@ example(of: "BehaviorSubjecct") {
         print(label: "2)", event: $0)
     }.disposed(by: bag)
 }
+
+example(of: "ReplaySubject") {
+    // 1
+    let subject = ReplaySubject<String>.create(bufferSize: 2)
+    let bag = DisposeBag()
+    
+    // 2
+    subject.onNext("1")
+    subject.onNext("2")
+    subject.onNext("3")
+    
+    // 3
+    subject.subscribe {
+        print(label: "1)", event: $0)
+    }.disposed(by: bag)
+    
+    subject.subscribe {
+        print(label: "2)", event: $0)
+    }.disposed(by: bag)
+    
+    subject.onNext("4")
+    
+    subject.onError(MyError.anError)
+    subject.dispose()
+    
+    subject.subscribe {
+        print(label: "3)", event: $0)
+    }.disposed(by: bag)
+}
+
+
+// MARK:- Publish Relay
+example(of: "PublishRelay") {
+    let relay = PublishRelay<String>()
+    
+    let bag = DisposeBag()
+    
+    relay.accept("Knock knock, anyone home?")
+    
+    relay.subscribe(onNext: {
+        print($0)
+    }).disposed(by: bag)
+    
+    relay.accept("1")
+}
+
+// MARK:- Behavior Relay
+example(of: "BehaviorRelay") {
+    // 1
+    let relay = BehaviorRelay(value: "Initial value")
+    let bag = DisposeBag()
+    
+    // 2
+    relay.accept("New initial value")
+    
+    // 3
+    relay.subscribe {
+        print(label: "1)", event: $0)
+    }.disposed(by: bag)
+    
+    // 1
+    relay.accept("1")
+    
+    // 2
+    relay.subscribe {
+        print(label: "2)", event: $0)
+    }.disposed(by: bag)
+    
+    // 3
+    relay.accept("2")
+    
+    print(relay.value)
+}
